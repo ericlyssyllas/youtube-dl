@@ -59,7 +59,7 @@ class FunimationIE(InfoExtractor):
             return
         try:
             data = self._download_json(
-                'https://prod-api-funimationnow.dadcdigital.com/api/auth/login/',
+                'https://prod-api-funimationnow.dadcdigital.com/api/source/auth/login/',
                 None, 'Logging in', data=urlencode_postdata({
                     'username': username,
                     'password': password,
